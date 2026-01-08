@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guincho em Aparecida de Goiânia - GO | Auto Socorro Bravus</title>
+    <meta name="description"
+        content="Precisa de Guincho em Aparecida de Goiânia? Atendimento 24h no Setor Garavelo, Vila Brasília e Região. Reboque rápido para carros e motos. Preço justo e aceitamos PIX.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="./assets/img_webp/guincho-em-aparecida-de-goiania-logo.webp">
+    <link rel="apple-touch-icon" href="./assets/img_webp/guincho-em-aparecida-de-goiania-logo.webp">
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://maps.googleapis.com">
+    <!-- Preload LCP image -->
+    <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1625986872583-057199435b6c?q=60&w=1200&auto=format&fit=crop"
+        fetchpriority="high">
+    <!-- Preload Font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- JSON-LD -->
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"Auto Socorro Bravus","telephone":"+5562992103226","address":{"@type":"PostalAddress","streetAddress":"R. Pigalle, 1 - Res. Village Garavelo","addressLocality":"Aparecida de Goiânia","addressRegion":"GO","postalCode":"74968-525"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}</script>
+    <style>
+        /* ========================================
+           🎨 CORES PRINCIPAIS - EDITE AQUI
+           ======================================== */
+        :root {
+            /* Cor principal (fundo header, hero, footer) */
+            --cor-principal: #551526;
+
+            /* Cor secundária (fundo cards escuros) */
+            --cor-secundaria: #3D0F1B;
+
+            /* Cor de destaque (badges, botão ligar, destaques) */
+            --cor-destaque: #E8B4A8;
+
+            /* Cor destaque hover */
+            --cor-destaque-hover: #DDA0A0;
+
+            /* Cor do botão WhatsApp */
+            --cor-whatsapp: #16a34a;
+            --cor-whatsapp-hover: #15803d;
+
+            /* Cor das bordas */
+            --cor-borda: #722F37;
+        }
+
+        /* ======================================== */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Roboto', system-ui, sans-serif;
+            line-height: 1.5;
+            color: #111827;
+            background: #fff;
+            -webkit-font-smoothing: antialiased
+        }
+
+        img,
+        svg {
+            display: block;
+            max-width: 100%
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .gap-2 {
+            gap: .5rem
+        }
+
+        .gap-3 {
+            gap: .75rem
+        }
+
+        .gap-4 {
+            gap: 1rem
+        }
+
+        .gap-6 {
+            gap: 1.5rem
+        }
+
+        .gap-8 {
+            gap: 2rem
+        }
+
+        .gap-10 {
+            gap: 2.5rem
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .px-3 {
+            padding-left: .75rem;
+            padding-right: .75rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .px-5 {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem
+        }
+
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+
+        .py-1 {
+            padding-top: .25rem;
+            padding-bottom: .25rem
+        }
+
+        .py-2 {
+            padding-top: .5rem;
+            padding-bottom: .5rem
+        }
+
+        .py-3 {
+            padding-top: .75rem;
+            padding-bottom: .75rem
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .py-5 {
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem
+        }
+
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem
+        }
+
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem
+        }
+
+        .p-5 {
+            padding: 1.25rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .p-8 {
+            padding: 2rem
+        }
+
+        .pb-5 {
+            padding-bottom: 1.25rem
+        }
+
+        .pt-8 {
+            padding-top: 2rem
+        }
+
+        .mb-2 {
+            margin-bottom: .5rem
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem
+        }
+
+        .mb-10 {
+            margin-bottom: 2.5rem
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem
+        }
+
+        .mt-1 {
+            margin-top: .25rem
+        }
+
+        .mt-2 {
+            margin-top: .5rem
+        }
+
+        .mt-4 {
+            margin-top: 1rem
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .w-3 {
+            width: .75rem
+        }
+
+        .w-4 {
+            width: 1rem
+        }
+
+        .w-5 {
+            width: 1.25rem
+        }
+
+        .w-6 {
+            width: 1.5rem
+        }
+
+        .w-8 {
+            width: 2rem
+        }
+
+        .w-12 {
+            width: 3rem
+        }
+
+        .w-16 {
+            width: 4rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .h-3 {
+            height: .75rem
+        }
+
+        .h-4 {
+            height: 1rem
+        }
+
+        .h-5 {
+            height: 1.25rem
+        }
+
+        .h-6 {
+            height: 1.5rem
+        }
+
+        .h-8 {
+            height: 2rem
+        }
+
+        .h-12 {
+            height: 3rem
+        }
+
+        .h-16 {
+            height: 4rem
+        }
+
+        .h-1 {
+            height: .25rem
+        }
+
+        .h-full {
+            height: 100%
+        }
+
+        .max-w-xl {
+            max-width: 36rem
+        }
+
+        .max-w-3xl {
+            max-width: 48rem
+        }
+
+        .text-xs {
+            font-size: .75rem
+        }
+
+        .text-sm {
+            font-size: .875rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem
+        }
+
+        .text-2xl {
+            font-size: 1.5rem
+        }
+
+        .text-3xl {
+            font-size: 1.875rem
+        }
+
+        .text-4xl {
+            font-size: 2.25rem
+        }
+
+        .text-5xl {
+            font-size: 3rem
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .font-black {
+            font-weight: 900
+        }
+
+        .uppercase {
+            text-transform: uppercase
+        }
+
+        .tracking-wide {
+            letter-spacing: .025em
+        }
+
+        .tracking-widest {
+            letter-spacing: .1em
+        }
+
+        .tracking-tighter {
+            letter-spacing: -.05em
+        }
+
+        .leading-none {
+            line-height: 1
+        }
+
+        .leading-tight {
+            line-height: 1.25
+        }
+
+        .leading-relaxed {
+            line-height: 1.625
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-white {
+            color: #fff
+        }
+
+        .text-gray-300 {
+            color: #d1d5db
+        }
+
+        .text-gray-400 {
+            color: #9ca3af
+        }
+
+        .text-gray-600 {
+            color: #4b5563
+        }
+
+        .text-slate-900 {
+            color: var(--cor-principal)
+        }
+
+        .text-yellow-500 {
+            color: var(--cor-destaque)
+        }
+
+        .text-yellow-600 {
+            color: var(--cor-destaque-hover)
+        }
+
+        .text-green-500 {
+            color: #22c55e
+        }
+
+        .text-pink-500 {
+            color: #ec4899
+        }
+
+        .bg-white {
+            background: #fff
+        }
+
+        .bg-gray-50 {
+            background: #f9fafb
+        }
+
+        .bg-gray-100 {
+            background: #f3f4f6
+        }
+
+        .bg-slate-100 {
+            background: #FDF2F4
+        }
+
+        .bg-slate-800 {
+            background: var(--cor-secundaria)
+        }
+
+        .bg-slate-900 {
+            background: var(--cor-principal)
+        }
+
+        .bg-yellow-100 {
+            background: rgba(232, 180, 168, 0.15)
+        }
+
+        .bg-yellow-500 {
+            background: var(--cor-destaque)
+        }
+
+        .bg-green-600 {
+            background: var(--cor-whatsapp)
+        }
+
+        .rounded {
+            border-radius: .25rem
+        }
+
+        .rounded-lg {
+            border-radius: .5rem
+        }
+
+        .rounded-xl {
+            border-radius: .75rem
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .border {
+            border: 1px solid
+        }
+
+        .border-t {
+            border-top: 1px solid
+        }
+
+        .border-b-4 {
+            border-bottom: 4px solid
+        }
+
+        .border-white {
+            border-color: #fff
+        }
+
+        .border-gray-200 {
+            border-color: #e5e7eb
+        }
+
+        .border-slate-700 {
+            border-color: var(--cor-borda)
+        }
+
+        .border-slate-800 {
+            border-color: var(--cor-secundaria)
+        }
+
+        .border-yellow-500 {
+            border-bottom-color: var(--cor-destaque)
+        }
+
+        .border-slate-900 {
+            border-bottom-color: var(--cor-principal)
+        }
+
+        .shadow-sm {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .05)
+        }
+
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1)
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1)
+        }
+
+        .shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1)
+        }
+
+        .shadow-2xl {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25)
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .absolute {
+            position: absolute
+        }
+
+        .fixed {
+            position: fixed
+        }
+
+        .sticky {
+            position: sticky
+        }
+
+        .inset-0 {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0
+        }
+
+        .top-0 {
+            top: 0
+        }
+
+        .bottom-6 {
+            bottom: 1.5rem
+        }
+
+        .right-6 {
+            right: 1.5rem
+        }
+
+        .z-0 {
+            z-index: 0
+        }
+
+        .z-10 {
+            z-index: 10
+        }
+
+        .z-40 {
+            z-index: 40
+        }
+
+        .z-50 {
+            z-index: 50
+        }
+
+        .inline-flex {
+            display: inline-flex
+        }
+
+        .block {
+            display: block
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .items-start {
+            align-items: flex-start
+        }
+
+        .object-cover {
+            object-fit: cover
+        }
+
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .opacity-30 {
+            opacity: .3
+        }
+
+        .transition {
+            transition: all .15s ease
+        }
+
+        .transition-all {
+            transition: all .3s ease
+        }
+
+        .transition-shadow {
+            transition: box-shadow .15s ease
+        }
+
+        .transition-colors {
+            transition: color .15s ease, background .15s ease
+        }
+
+        .transition-transform {
+            transition: transform .15s ease
+        }
+
+        .duration-500 {
+            transition-duration: .5s
+        }
+
+        .grayscale {
+            filter: grayscale(100%)
+        }
+
+        .cursor-pointer {
+            cursor: pointer
+        }
+
+        .space-y-2>*+* {
+            margin-top: .5rem
+        }
+
+        .space-y-3>*+* {
+            margin-top: .75rem
+        }
+
+        .space-y-4>*+* {
+            margin-top: 1rem
+        }
+
+        .hero {
+            height: 600px
+        }
+
+        .bg-grad {
+            background: linear-gradient(to top, #4A1A2A, rgba(92, 31, 53, .6), transparent)
+        }
+
+        details>summary {
+            list-style: none;
+            cursor: pointer
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none
+        }
+
+        .icon-svg {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentColor;
+            vertical-align: middle
+        }
+
+        @media(hover:hover) {
+            .hv-y4:hover {
+                background: var(--cor-destaque-hover)
+            }
+
+            .hv-y5:hover {
+                background: var(--cor-destaque)
+            }
+
+            .hv-g7:hover {
+                background: var(--cor-whatsapp-hover)
+            }
+
+            .hv-ty5:hover {
+                color: var(--cor-destaque)
+            }
+
+            .hv-tw:hover {
+                color: #fff
+            }
+
+            .hv-sxl:hover {
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1)
+            }
+
+            .hv-s110:hover {
+                transform: scale(1.1)
+            }
+
+            .hv-ty1:hover {
+                transform: translateY(-.25rem)
+            }
+
+            .hv-gr0:hover {
+                filter: grayscale(0)
+            }
+
+            .group:hover .ghv-y5 {
+                background: var(--cor-destaque)
+            }
+        }
+
+        details[open] .rot180 {
+            transform: rotate(180deg)
+        }
+
+        /* Mobile - títulos menores */
+        @media(max-width:639px) {
+            .text-3xl {
+                font-size: 1.75rem
+            }
+
+            .text-4xl {
+                font-size: 2rem
+            }
+
+            .text-xl {
+                font-size: 1.125rem
+            }
+        }
+
+        @media(min-width:640px) {
+            .sm-i {
+                display: inline
+            }
+        }
+
+        @media(min-width:768px) {
+            .md-f {
+                display: flex
+            }
+
+            .md-g2 {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .md-g3 {
+                grid-template-columns: repeat(3, 1fr)
+            }
+
+            .md-g4 {
+                grid-template-columns: repeat(4, 1fr)
+            }
+
+            .md-fr {
+                flex-direction: row
+            }
+
+            .md-w12 {
+                width: 50%
+            }
+
+            .md-wa {
+                width: auto
+            }
+
+            .md-mt0 {
+                margin-top: 0
+            }
+
+            .md-t5 {
+                font-size: 3rem
+            }
+        }
+
+        @media(min-width:1024px) {
+            .lg-g3 {
+                grid-template-columns: repeat(3, 1fr)
+            }
+
+            .lg-g4 {
+                grid-template-columns: repeat(4, 1fr)
+            }
+
+            .lg-t6 {
+                font-size: 3.75rem
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900">
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5562992103226?text=Olá,%20preciso%20de%20um%20guincho%20em%20Aparecida%20de%20Goiânia!"
+        target="_blank"
+        class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-green-600 rounded-full shadow-2xl hv-g7 transition-all hv-s110 text-white border-white"
+        style="border-width:2px" aria-label="Chamar no WhatsApp">
+        <svg class="w-8 h-8" viewBox="0 0 448 512" fill="currentColor">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+    <!-- Header -->
+    <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-40">
+        <div class="container flex justify-between items-center py-3 px-4"
+            style="padding-top: max(0.75rem, env(safe-area-inset-top));">
+            <div class="flex items-center gap-2">
+                <img src="./assets/img_webp/guincho-em-aparecida-de-goiania-logo.webp" alt="Auto Socorro Bravus Logo"
+                    class="w-12 h-12 object-contain">
+                <div class="flex flex-col"><span class="font-black tracking-tighter uppercase leading-none"
+                        style="font-size:16px">AUTO
+                        SOCORRO
+                        BRAVUS</span><span class="text-yellow-500 font-bold tracking-widest"
+                        style="font-size:10px">GUINCHO 24H</span>
+                </div>
+            </div>
+            <nav class="hidden md-f gap-6 text-sm font-bold tracking-wide items-center">
+                <a href="#servicos" class="hv-ty5 transition">SERVIÇOS</a>
+                <a href="#atuacao" class="hv-ty5 transition">BAIRROS</a>
+                <a href="#faq" class="hv-ty5 transition">DÚVIDAS</a>
+            </nav>
+            <a href="tel:62992103226"
+                class="flex items-center justify-center bg-yellow-500 hv-y4 text-slate-900 rounded font-black transition"
+                style="width: 40px; height: 40px;">
+                <svg class="w-5 h-5" viewBox="0 0 512 512" fill="currentColor">
+                    <path
+                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                </svg>
+            </a>
+        </div>
+    </header>
+    <!-- Hero -->
+    <section class="relative hero flex items-center justify-center text-center px-4 bg-slate-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-grad"></div>
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 bg-yellow-500 text-slate-900 text-xs font-black rounded mb-6 tracking-widest uppercase">
+                <svg class="w-3 h-3" viewBox="0 0 384 512" fill="currentColor">
+                    <path d="M32 224h128l-48 248 192-304H160l64-168z" />
+                </svg>
+                Chegamos em até 30 min
+            </div>
+            <h1 class="text-4xl md-t5 lg-t6 font-black text-white mb-6 leading-tight">Guincho em Aparecida de
+                Goiânia<br><span class="text-yellow-500">Auto Socorro Bravus</span></h1>
+            <p class="text-lg text-gray-300 mb-8 font-medium max-w-xl mx-auto">Socorro imediato para seu carro ou moto.
+                Chegamos rápido no Garavelo, Vila Brasília e toda região. Preço justo e segurança total.</p>
+            <div class="flex flex-col md-fr gap-4 w-full mx-auto justify-center" style="max-width: 600px;">
+                <a href="https://wa.me/5562992103226?text=Preciso%20de%20socorro%20em%20Aparecida%20de%20Goiânia!"
+                    class="inline-flex items-center justify-center gap-2 bg-green-600 text-white font-bold shadow-lg transition-all hv-ty1 flex-1"
+                    style="border-radius: 10px; min-height: 54px; font-size: 15px; padding: 12px 32px;">
+                    <svg class="w-5 h-5" viewBox="0 0 448 512" fill="currentColor">
+                        <path
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                    </svg>
+                    Chamar no WhatsApp
+                </a>
+                <a href="tel:62992103226"
+                    class="inline-flex items-center justify-center gap-2 bg-yellow-500 text-slate-900 font-bold shadow-lg transition-all hv-ty1 flex-1"
+                    style="border-radius: 10px; min-height: 54px; font-size: 15px; padding: 12px 32px;">
+                    <svg class="w-5 h-5" viewBox="0 0 512 512" fill="currentColor">
+                        <path
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                    </svg>
+                    Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Serviços -->
+    <section id="servicos" class="py-16 bg-slate-800">
+        <div class="container px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-white uppercase">Nossos Serviços de Guincho em Aparecida de
+                    Goiânia</h2>
+                <div class="w-16 h-1 bg-yellow-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md-g2 lg-g4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md border-b-4 border-yellow-500 hv-sxl transition-shadow">
+                    <div
+                        class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl mb-4">
+                        <svg class="w-6 h-6" viewBox="0 0 640 512" fill="currentColor">
+                            <path
+                                d="M171.3 96H224v96H111.3l30.4-75.9C146.5 104 158.2 96 171.3 96zM272 192V96h81.2c9.7 0 18.9 4.4 25 12l67.2 84H272zm256.2 1L428.2 68c-18.2-22.8-45.8-36-75-36H171.3c-39.3 0-74.6 23.9-89.1 60.3L40.6 196.4C16.8 205.8 0 228.9 0 256v112c0 17.7 14.3 32 32 32h33.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80h130.6c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H608c17.7 0 32-14.3 32-32v-48c0-65.2-48.8-119-111.8-127zM480 416a48 48 0 1 1 0-96 48 48 0 1 1 0 96zm-320 0a48 48 0 1 1 0-96 48 48 0 1 1 0 96z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Guincho Leve e Pesado</h3>
+                    <p class="text-sm text-gray-600">Transporte seguro para carros de passeio, SUVs, caminhonetes e
+                        utilitários.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-b-4 border-yellow-500 hv-sxl transition-shadow">
+                    <div
+                        class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl mb-4">
+                        <svg class="w-6 h-6" viewBox="0 0 576 512" fill="currentColor">
+                            <path
+                                d="M464 160c8.8 0 16 7.2 16 16v160c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h384zM80 96C35.8 96 0 131.8 0 176v160c0 44.2 35.8 80 80 80h384c44.2 0 80-35.8 80-80V320h16c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H544V176c0-44.2-35.8-80-80-80H80zm368 96H128c-8.8 0-16 7.2-16 16s7.2 16 16 16h320c8.8 0 16-7.2 16-16s-7.2-16-16-16z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Pane Seca e Bateria</h3>
+                    <p class="text-sm text-gray-600">Auxílio de partida (chupeta) ou recarga de bateria e entrega de
+                        combustível no local.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-b-4 border-yellow-500 hv-sxl transition-shadow">
+                    <div
+                        class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl mb-4">
+                        <svg class="w-6 h-6" viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M352 320c88.4 0 160-71.6 160-160c0-15.3-2.2-30.1-6.2-44.2c-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16V118.6c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0C263.6 0 192 71.6 192 160c0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L297.5 310.5c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Troca de Pneus</h3>
+                    <p class="text-sm text-gray-600">Seu pneu furou e não tem estepe ou chave? Nossa equipe resolve para
+                        você na hora.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-b-4 border-yellow-500 hv-sxl transition-shadow">
+                    <div
+                        class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl mb-4">
+                        <svg class="w-6 h-6" viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c53 0 96 43 96 96s-43 96-96 96H139.6c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-53 0-96-43-96-96s43-96 96-96h39.8c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM96 416a64 64 0 1 0 0-128 64 64 0 1 0 0 128zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Viagens Intermunicipais</h3>
+                    <p class="text-sm text-gray-600">Transporte de veículos para outras cidades de Goiás com
+                        agendamento prévio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Área de Atuação -->
+    <section id="atuacao" class="py-16 bg-slate-900 text-white">
+        <div class="container px-4 flex flex-col md-fr items-center gap-10">
+            <div class="md-w12">
+                <h2 class="text-3xl font-black mb-6 uppercase">Atendemos em Todo o Brasil
+                </h2>
+                <p class="text-gray-300 mb-6 font-medium leading-relaxed">Não importa onde você esteja, nós chegamos até
+                    você com rapidez e segurança.</p>
+                <div class="grid" style="grid-template-columns:repeat(2,1fr);gap:1rem">
+                    <div class="flex items-center gap-2 text-sm font-bold text-yellow-500"><svg class="w-4 h-4"
+                            viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628 0z" />
+                        </svg>São Paulo</div>
+                    <div class="flex items-center gap-2 text-sm font-bold text-yellow-500"><svg class="w-4 h-4"
+                            viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628 0z" />
+                        </svg>Rio de Janeiro</div>
+                    <div class="flex items-center gap-2 text-sm font-bold text-yellow-500"><svg class="w-4 h-4"
+                            viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628 0z" />
+                        </svg>Minas Gerais</div>
+                    <div class="flex items-center gap-2 text-sm font-bold text-yellow-500"><svg class="w-4 h-4"
+                            viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628 0z" />
+                        </svg>Goiás</div>
+                    <div class="flex items-center gap-2 text-sm font-bold text-yellow-500"><svg class="w-4 h-4"
+                            viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628 0z" />
+                        </svg>Bahia</div>
+                    <div class="flex items-center gap-2 text-sm font-bold text-yellow-500"><svg class="w-4 h-4"
+                            viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628 0z" />
+                        </svg>E mais 21 estados!</div>
+                </div>
+            </div>
+            <div class="md-w12 bg-slate-800 p-8 rounded-2xl border border-slate-700 text-center">
+                <svg class="w-16 h-16 text-yellow-500 mb-4 mx-auto" viewBox="0 0 384 512" fill="currentColor">
+                    <path
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                </svg>
+                <h3 class="text-xl font-bold mb-2">Está na estrada ou rodovia?</h3>
+                <a href="https://wa.me/5562992103226"
+                    class="block w-full bg-green-600 hv-g7 text-white font-bold py-3 rounded-lg transition">MANDAR
+                    LOCALIZAÇÃO </a>
+            </div>
+        </div>
+    </section>
+    <!-- Diferenciais -->
+    <section class="py-16 bg-white">
+        <div class="container px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-slate-900">Por que escolher nosso Guincho em Aparecida de Goiânia?
+                </h2>
+            </div>
+            <div class="grid md-g4 gap-8 text-center">
+                <div class="group">
+                    <div
+                        class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-slate-900 text-2xl mx-auto mb-4 ghv-y5 transition-colors">
+                        <svg class="w-8 h-8" viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg">Chegada Rápida</h3>
+                    <p class="text-sm text-gray-600 mt-2">Prioridade máxima para emergências.</p>
+                </div>
+                <div class="group">
+                    <div
+                        class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-slate-900 text-2xl mx-auto mb-4 ghv-y5 transition-colors">
+                        <svg class="w-8 h-8" viewBox="0 0 320 512" fill="currentColor">
+                            <path
+                                d="M160 0c17.7 0 32 14.3 32 32V67.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.1c-.4-.1-.9-.1-1.3-.2l-.2 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11V32c0-17.7 14.3-32 32-32z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg">Preço Justo</h3>
+                    <p class="text-sm text-gray-600 mt-2">Valores transparentes e combinados antes.</p>
+                </div>
+                <div class="group">
+                    <div
+                        class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-slate-900 text-2xl mx-auto mb-4 ghv-y5 transition-colors">
+                        <svg class="w-8 h-8" viewBox="0 0 576 512" fill="currentColor">
+                            <path
+                                d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg">Facilidade</h3>
+                    <p class="text-sm text-gray-600 mt-2">Aceitamos Cartões de Crédito e PIX.</p>
+                </div>
+                <div class="group">
+                    <div
+                        class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-slate-900 text-2xl mx-auto mb-4 ghv-y5 transition-colors">
+                        <svg class="w-8 h-8" viewBox="0 0 512 512" fill="currentColor">
+                            <path
+                                d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.3 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg">Segurança</h3>
+                    <p class="text-sm text-gray-600 mt-2">Cuidado total no manuseio do seu bem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Galeria -->
+    <section id="galeria" class="py-16 bg-slate-900">
+        <div class="container px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-white uppercase">Confira nossos serviços de Guincho em Aparecida de
+                    Goiânia
+                </h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto">Confira alguns dos nossos atendimentos em Aparecida de
+                    Goiânia e
+                    região. Profissionalismo e cuidado em cada serviço.</p>
+                <div class="w-16 h-1 bg-yellow-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md-g2 lg-g4 gap-4">
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (1).webp"
+                        alt="Guincho em Aparecida de Goiânia - Serviço de reboque"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        style="transform: rotate(-90deg);" loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (2).webp"
+                        alt="Guincho em Aparecida de Goiânia - Auto socorro"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (4).webp"
+                        alt="Guincho em Aparecida de Goiânia - Reboque 24h"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (5).webp"
+                        alt="Guincho em Aparecida de Goiânia - Atendimento rápido"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (6).webp"
+                        alt="Guincho em Aparecida de Goiânia - Serviço profissional"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (7).webp"
+                        alt="Guincho em Aparecida de Goiânia - Equipamentos modernos"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (8).webp"
+                        alt="Guincho em Aparecida de Goiânia - Transporte seguro"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (9).webp"
+                        alt="Guincho em Aparecida de Goiânia - Reboque de veículos"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (10).webp"
+                        alt="Guincho em Aparecida de Goiânia - Socorro imediato"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        style="transform: rotate(-90deg);" loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (11).webp"
+                        alt="Guincho em Aparecida de Goiânia - Atendimento 24 horas"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (12).webp"
+                        alt="Guincho em Aparecida de Goiânia - Cuidado com seu veículo"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (13).webp"
+                        alt="Guincho em Aparecida de Goiânia - Serviço confiável"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (14).webp"
+                        alt="Guincho em Aparecida de Goiânia - Equipe especializada"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group cursor-pointer" style="aspect-ratio:1/1">
+                    <img src="./assets/img_webp/Guincho-em-aparecida-de-goiania (15).webp"
+                        alt="Guincho em Aparecida de Goiânia - Resgate de veículos"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="container px-4 max-w-3xl">
+            <h2 class="text-3xl font-black text-slate-900 text-center mb-10">Dúvidas sobre Guincho em Aparecida de
+                Goiânia</h2>
+            <div class="space-y-4">
+                <details class="bg-white border border-gray-200 rounded-lg shadow-sm group">
+                    <summary class="flex justify-between items-center p-5 font-bold text-slate-900">Qual o preço do
+                        guincho em Aparecida de Goiânia?<span class="text-yellow-600 transition-transform rot180"><svg
+                                class="w-4 h-4" viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+                            </svg></span></summary>
+                    <div class="px-5 pb-5 text-gray-600 text-sm">O valor depende da distância (Km rodado) e do tipo de
+                        veículo. Temos uma taxa de saída fixa super acessível. Chame no WhatsApp para um orçamento exato
+                        e sem surpresas.</div>
+                </details>
+                <details class="bg-white border border-gray-200 rounded-lg shadow-sm group">
+                    <summary class="flex justify-between items-center p-5 font-bold text-slate-900">Qual o tempo de
+                        espera?<span class="text-yellow-600 transition-transform rot180"><svg class="w-4 h-4"
+                                viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+                            </svg></span></summary>
+                    <div class="px-5 pb-5 text-gray-600 text-sm">Em média, chegamos entre 20 a 40 minutos dentro da
+                        cidade. Para regiões mais afastadas, informamos a previsão exata
+                        no atendimento.</div>
+                </details>
+                <details class="bg-white border border-gray-200 rounded-lg shadow-sm group">
+                    <summary class="flex justify-between items-center p-5 font-bold text-slate-900">Quais as formas de
+                        pagamento?<span class="text-yellow-600 transition-transform rot180"><svg class="w-4 h-4"
+                                viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+                            </svg></span></summary>
+                    <div class="px-5 pb-5 text-gray-600 text-sm">Aceitamos PIX, Dinheiro e Cartões de Crédito/Débito
+                        (levamos a maquininha até você).</div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- Mapa com Lazy Loading -->
+    <section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8976543210123!2d-49.2789!3d-16.7889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef0a1b2c3d4e5%3A0x6f7g8h9i0j1k2l3m!2sR.%20Pigalle%2C%201%20-%20Res.%20Village%20Garavelo%2C%20Aparecida%20de%20Goi%C3%A2nia%20-%20GO%2C%2074968-525!5e0!3m2!1spt-BR!2sbr!4v1736343000000!5m2!1spt-BR!2sbr"
+            width="100%" height="450" style="border:0" allowfullscreen loading="lazy"
+            class="grayscale hv-gr0 transition duration-500 block" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
+        <div class="container px-4">
+            <div class="grid md-g3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="./assets/img_webp/guincho-em-aparecida-de-goiania-logo.webp"
+                            alt="Auto Socorro Bravus Logo" class="w-12 h-12 object-contain">
+                        <h2 class="text-white text-lg font-black uppercase" style="white-space: nowrap;">Auto Socorro
+                            Bravus</h2>
+                    </div>
+                    <p class="text-sm leading-relaxed">Solução rápida e confiável para emergências veiculares em
+                        Aparecida de Goiânia
+                        e região. Estamos prontos para te atender 24 horas por dia.</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Contato</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3"><svg class="mt-1 text-yellow-500 w-4 h-4"
+                                viewBox="0 0 384 512" fill="currentColor">
+                                <path
+                                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                            </svg><span>R. Pigalle, 1 - Res. Village Garavelo<br>Aparecida de Goiânia - GO,
+                                74968-525</span></li>
+                        <li class="flex items-center gap-3"><svg class="text-yellow-500 w-4 h-4" viewBox="0 0 512 512"
+                                fill="currentColor">
+                                <path
+                                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                            </svg><a href="tel:62992103226" class="hv-tw transition">(62) 99210-3226</a></li>
+                        <li class="flex items-center gap-3"><svg class="text-green-500 w-4 h-4" viewBox="0 0 448 512"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg><a href="https://wa.me/5562992103226" class="hv-tw transition">(62) 99210-3226</a>
+                        </li>
+                        <li class="flex items-center gap-3"><svg class="text-pink-500 w-4 h-4" viewBox="0 0 448 512"
+                                fill="currentColor">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg><a href="https://www.instagram.com/auto.socorrosoares" target="_blank"
+                                class="hv-tw transition">@auto.socorrosoares</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Acesso Rápido</h3>
+                    <ul class="space-y-2 text-sm" style="list-style: none;">
+                        <li><a href="#servicos" class="hv-ty5 transition">Nossos Serviços</a></li>
+                        <li><a href="#atuacao" class="hv-ty5 transition">Área de Cobertura</a></li>
+                        <li><a href="#faq" class="hv-ty5 transition">Perguntas Frequentes</a></li>
+                        <li><a href="#" class="hv-ty5 transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md-fr justify-between items-center text-xs">
+                <p>© 2026 Auto Socorro Bravus. Todos os direitos reservados.</p>
+                <div class="mt-4 md-mt0 flex gap-4">
+                    <a href="https://www.instagram.com/auto.socorrosoares" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram Auto Socorro Bravus" class="text-gray-400 hv-tw"><svg class="w-5 h-5"
+                            viewBox="0 0 448 512" fill="currentColor">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a href="#" class="text-gray-400 hv-tw"><svg class="w-5 h-5" viewBox="0 0 512 512"
+                            fill="currentColor">
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
